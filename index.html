@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tendrich Innovations SMC LTD - Dealers in CCTV, Automatic Gates, Solar Systems, Electric Fence, Razor Wire and more. Serving East Africa since 2023.">
+  <title>Tendrich Innovations SMC LTD | Security & Power Systems</title>
+
+  <!-- =====================================================================
+       GITHUB PAGES FOLDER STRUCTURE
+       =====================================================================
+       / (root)
+       ├── index.html
+       ├── 
+       │   ├── logo.jpeg           hero.jpg           technical-head.jpeg
+       │   ├── cctv.jpg            automatic-gate.jpg solar-battery.jpg
+       │   ├── electric-fence.jpg  razor-wire.jpg     carports.jpg
+       │   ├── electrical-wiring.jpeg  motion-sensor.jpeg
+       │   ├── fire-fighting.jpeg  access-control.jpeg
+       │   ├── teamwork.jpg integrity.jpg quality.jpg transparency.jpg unity.jpg
+       │   ├── Client logos:  muga.jpg chain.jpg power.jpeg jare.jpeg
+       │   │   solarica.jpg kuku.jpeg luwero.jpeg neptune.jpeg solar.jpeg
+       │   │   precious.jpeg soco.jpg target.jpg spring.jpeg joyale.jpeg
+       │   │   mbale.jpg krimhillschols.png afropark.png geogina.jpg
+       │   │   hopeclinic.jpeg jed.png
+       │   ├── gallery-01.jpeg ... gallery-97.jpeg
+       │   ├── install-01.jpeg ... install-15.jpeg
+       │   └── teamwork-01.jpeg ... teamwork-04.jpeg
+       └── videos/
+           ├── automatic-gate-install.mp4  cctv-install.mp4
+           ├── solar-install.mp4           electric-fence.mp4
+           ├── access-control.mp4          fire-system.mp4
+
+       OFFICE GPS COORDINATES:
+       0°21'58.0"N 32°36'56.8"E  →  0.366111, 32.615778
+       Ntinda Kigowa Road, opposite Police Post, Kampala, Uganda
+       ===================================================================== -->
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    :root {
+      --navy: #0f172a;
+      --navy-light: #1e293b;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --sky: #38bdf8;
+      --gold: #f59e0b;
+      --surface: #ffffff;
+      --light-bg: #f1f5f9;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #1ebe5a;
+      --radius: 10px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--surface);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: var(--blue); text-decoration: none; }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 1.25rem;
+      line-height: 1.2;
+    }
+
+    .section { padding: 5rem 0; }
+    .section-light { background: var(--light-bg); }
+    .section-accent {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: #fff;
+      text-align: center;
+    }
+    .section-accent h2 { color: #fff; }
+    .section-accent p { max-width: 720px; margin: 0 auto; color: #cbd5e1; }
+
+    .section-lead {
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 2.5rem;
+      font-size: 1.05rem;
+    }
+
+    /* ---- header ---- */
+    .site-header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 0.65rem; }
+    .logo-wrap img {
+      width: 52px; height: 52px; object-fit: cover;
+      border-radius: 50%; border: 2px solid var(--sky); background: #fff;
+    }
+    .logo-text {
+      font-size: 1.05rem; font-weight: 800; color: #fff;
+      line-height: 1.2; letter-spacing: -0.01em;
+    }
+    .logo-text span { color: var(--sky); display: block; font-size: 0.78rem; font-weight: 600; }
+
+    .main-nav a {
+      color: #cbd5e1 !important;
+      font-weight: 500; font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .main-nav a:hover { color: #fff !important; }
+
+    .hamburger-custom {
+      width: 24px; height: 2px; background: #fff;
+      display: block; position: relative; transition: 0.2s;
+    }
+    .hamburger-custom::before,
+    .hamburger-custom::after {
+      content: ""; position: absolute; left: 0;
+      width: 24px; height: 2px; background: #fff; transition: 0.2s;
+    }
+    .hamburger-custom::before { top: -7px; }
+    .hamburger-custom::after  { top: 7px; }
+
+    /* ---- hero ---- */
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,58,95,0.85) 60%, rgba(30,41,59,0.92) 100%),
+                  url('images/hero.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 7rem 0;
+      text-align: center;
+      background-color: #0f172a;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15; margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      max-width: 640px; margin: 0 auto 2.5rem;
+      color: #cbd5e1; font-size: 1.15rem;
+    }
+
+    /* ---- cards ---- */
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--blue);
+      height: 100%;
+    }
+    .about-card h3 { font-size: 1.15rem; margin-bottom: 0.65rem; color: var(--navy); }
+    .about-card p { color: var(--muted); }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+      overflow: hidden;
+      border-left: 4px solid var(--gold);
+      height: 100%;
+    }
+    .service-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .service-card img { width: 100%; height: 180px; object-fit: cover; }
+    .service-card-body { padding: 1.25rem 1.5rem 1.5rem; }
+    .service-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--navy); }
+    .service-card p { color: var(--muted); font-size: 0.92rem; margin-bottom: 0; }
+
+    .value-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      overflow: hidden;
+      height: 100%;
+    }
+    .value-card img { width: 100%; height: 150px; object-fit: cover; }
+    .value-card-body { padding: 1rem 1.25rem 1.25rem; }
+    .value-card h3 { font-size: 1rem; margin-bottom: 0.3rem; color: var(--navy); }
+    .value-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 0; }
+
+    /* ---- clients ---- */
+    .client-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      text-align: center;
+      height: 100%;
+      transition: transform 0.25s, box-shadow 0.25s;
+      display: flex;
+      flex-direction: column;
+    }
+    .client-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .client-logo-wrap {
+      background: #ffffff;
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .client-logo-wrap img {
+      max-height: 100px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.3s;
+      filter: grayscale(0.15);
+    }
+    .client-card:hover .client-logo-wrap img {
+      transform: scale(1.06);
+      filter: grayscale(0);
+    }
+    .client-card-body {
+      padding: 0.9rem 1rem 1.15rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .client-card-body h3 {
+      font-size: 0.92rem;
+      margin-bottom: 0.35rem;
+      color: var(--navy);
+      font-weight: 700;
+      line-height: 1.3;
+      min-height: 2.4em;
+    }
+    .client-card-body .client-cat {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--blue);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      align-self: center;
+    }
+    .clients-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .clients-cta a { font-weight: 600; color: var(--blue); }
+    .clients-cta a:hover { text-decoration: underline; }
+
+    /* ---- Technical Head action buttons ---- */
+    .ceo-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .ceo-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+      color: #fff;
+    }
+    .ceo-actions a:hover { transform: translateY(-2px); color: #fff; }
+    .ceo-actions a svg { width: 16px; height: 16px; fill: currentColor; }
+    .ceo-actions a.btn-wa  { background: #25D366; }
+    .ceo-actions a.btn-wa:hover  { background: #1ebe5a; }
+    .ceo-actions a.btn-mail { background: #EA4335; }
+    .ceo-actions a.btn-mail:hover { background: #c5221f; }
+    .ceo-actions a.btn-li  { background: #0A66C2; }
+    .ceo-actions a.btn-li:hover  { background: #084d92; }
+
+    /* Technical Head highlight */
+    .ceo-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      border-left: 5px solid var(--gold);
+    }
+    .ceo-card img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; }
+    .ceo-content { padding: 2rem 1.75rem; }
+    .ceo-content .ceo-tag {
+      display: inline-block; background: var(--gold);
+      color: #fff; font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 0.25rem 0.7rem; border-radius: 50px;
+      margin-bottom: 0.75rem;
+    }
+    .ceo-content h3 { font-size: 1.5rem; color: var(--navy); margin-bottom: 0.2rem; }
+    .ceo-content .ceo-role {
+      color: var(--blue); font-weight: 600; font-size: 0.95rem;
+      display: block; margin-bottom: 1rem;
+    }
+    .ceo-content p { color: var(--muted); font-size: 0.95rem; }
+    .ceo-availability {
+      background: rgba(37, 99, 235, 0.07);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 6px 6px 0;
+      padding: 0.7rem 0.9rem;
+      color: var(--navy-light) !important;
+      font-weight: 600;
+      font-size: 0.92rem !important;
+      margin-bottom: 1rem;
+    }
+    .ceo-quote {
+      font-style: italic; color: var(--navy-light);
+      border-left: 3px solid var(--gold);
+      padding-left: 1rem; margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* ---- video section ---- */
+    .video-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .video-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+      overflow: hidden;
+    }
+    .video-wrapper video,
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+    .video-card-body { padding: 1rem 1.25rem 1.25rem; }
+    .video-card-body h3 { font-size: 1rem; margin-bottom: 0.3rem; color: var(--navy); }
+    .video-card-body p { color: var(--muted); font-size: 0.88rem; margin-bottom: 0; }
+    .video-card-body .badge-cat {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--blue);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 50px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---- gallery ---- */
+    .gallery-item {
+      border-radius: 8px; overflow: hidden;
+      cursor: pointer; box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+      background: var(--light-bg);
+    }
+    .gallery-item:hover { transform: scale(1.03); box-shadow: var(--shadow-md); }
+    .gallery-item img {
+      width: 100%; height: 160px; object-fit: cover; display: block;
+      transition: opacity 0.3s;
+    }
+
+    /* ---- lightbox ---- */
+    .lightbox {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.9); z-index: 9999;
+      align-items: center; justify-content: center; padding: 2rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw; max-height: 85vh;
+      border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .lightbox-close {
+      position: absolute; top: 1rem; right: 1.5rem;
+      background: none; border: none; color: #fff;
+      font-size: 2.5rem; cursor: pointer; line-height: 1;
+    }
+
+    /* ---- map embed ---- */
+    .map-embed {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      background: var(--light-bg);
+      margin-bottom: 1rem;
+    }
+    .map-embed iframe {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; border: 0;
+    }
+    .map-meta {
+      display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+      align-items: center; justify-content: space-between;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .map-coords {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      font-weight: 600; color: var(--navy);
+    }
+    .map-coords i { color: var(--blue); }
+    .map-directions-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.55rem 1.1rem;
+      background: var(--blue); color: #fff !important;
+      border-radius: 50px; font-weight: 600; font-size: 0.85rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .map-directions-btn:hover { background: var(--blue-dark); transform: translateY(-2px); }
+
+    /* ---- form ---- */
+    #contact-form { max-width: 620px; margin: 0 auto; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.35rem; font-size: 0.95rem; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%; padding: 0.7rem 0.85rem;
+      border: 1px solid var(--border); border-radius: var(--radius);
+      font: inherit; background: var(--surface); color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none; border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+    }
+    .form-group input.invalid,
+    .form-group textarea.invalid {
+      border-color: #ef4444; box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+    }
+    .error { display: block; color: #ef4444; font-size: 0.85rem; margin-top: 0.3rem; min-height: 1.2em; }
+    .form-success { margin-top: 1.25rem; color: #16a34a; font-weight: 600; text-align: center; }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+      color: #94a3b8;
+      padding: 4rem 0 0;
+      font-size: 0.9rem;
+    }
+    .footer-brand { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .footer-brand img {
+      width: 52px; height: 52px; object-fit: cover;
+      border-radius: 50%; border: 2px solid var(--sky); background: #fff;
+    }
+    .footer-brand .brand-text { font-weight: 800; color: #fff; font-size: 1rem; line-height: 1.2; }
+    .footer-brand .brand-text span { display: block; color: var(--sky); font-size: 0.75rem; font-weight: 600; }
+    .footer-about-text { color: #94a3b8; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.25rem; }
+    .site-footer h5 {
+      color: #fff; font-size: 0.95rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 1.25rem; position: relative;
+      padding-bottom: 0.6rem;
+    }
+    .site-footer h5::after {
+      content: ""; position: absolute; left: 0; bottom: 0;
+      width: 32px; height: 3px; background: var(--blue); border-radius: 2px;
+    }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 0.55rem; }
+    .footer-links a {
+      color: #94a3b8; text-decoration: none;
+      font-size: 0.88rem; transition: color 0.2s, padding-left 0.2s;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+    }
+    .footer-links a::before {
+      content: "\F285";
+      font-family: "bootstrap-icons";
+      font-size: 0.7rem; color: var(--blue);
+      transition: transform 0.2s;
+    }
+    .footer-links a:hover { color: #fff; padding-left: 3px; }
+    .footer-links a:hover::before { transform: translateX(2px); }
+
+    .footer-contact-item {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      margin-bottom: 0.9rem; color: #94a3b8; font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .footer-contact-item .ico {
+      flex-shrink: 0;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(56, 189, 248, 0.1);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--sky); font-size: 0.95rem;
+    }
+    .footer-contact-item a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+    .footer-contact-item a:hover { color: #fff; }
+
+    .office-location-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 8px;
+      color: var(--sky);
+      font-weight: 600; font-size: 0.85rem; margin-top: 0.5rem;
+      transition: background 0.2s, transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+    }
+    .office-location-link:hover {
+      background: var(--sky); color: #0f172a;
+      border-color: var(--sky); transform: translateX(3px);
+      text-decoration: none;
+    }
+    .office-location-link i { font-size: 1.05rem; }
+
+    .office-map-card {
+      background: var(--light-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 2.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none; color: inherit;
+    }
+    .office-map-card:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow-md);
+      text-decoration: none; color: inherit;
+    }
+    .office-map-card .map-text h4 { font-size: 1rem; color: var(--navy); margin-bottom: 0.15rem; font-weight: 700; }
+    .office-map-card .map-text p { color: var(--muted); font-size: 0.88rem; margin-bottom: 0.15rem; }
+    .office-map-card .map-text span { color: var(--blue); font-size: 0.82rem; font-weight: 600; }
+    .office-map-card .map-text i { color: var(--blue); }
+
+    .footer-social { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .footer-social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(255,255,255,0.06); color: #cbd5e1;
+      font-size: 1.05rem; transition: all 0.25s; text-decoration: none;
+    }
+    .footer-social a:hover { transform: translateY(-3px); color: #fff; }
+    .footer-social a.tiktok:hover    { background: #000; }
+    .footer-social a.instagram:hover { background: #E1306C; }
+    .footer-social a.twitter:hover   { background: #1DA1F2; }
+    .footer-social a.youtube:hover   { background: #FF0000; }
+    .footer-social a.linkedin:hover  { background: #0A66C2; }
+    .footer-social a.whatsapp:hover  { background: var(--whatsapp); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 3rem; padding: 1.5rem 0;
+      background: rgba(0,0,0,0.25);
+    }
+    .footer-bottom-inner {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      align-items: center; justify-content: space-between;
+      font-size: 0.82rem;
+    }
+    .footer-bottom .copyright { color: #94a3b8; }
+    .footer-bottom .copyright strong { color: #fff; }
+    .footer-bottom .designer { color: #94a3b8; font-size: 0.82rem; }
+    .footer-bottom .designer a { color: var(--sky); font-weight: 600; text-decoration: none; }
+    .footer-bottom .designer a:hover { color: #fff; }
+    .footer-legal-links a {
+      color: #94a3b8; text-decoration: none;
+      margin: 0 0.5rem; font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-legal-links a:hover { color: #fff; }
+    .footer-legal-links a:first-child { margin-left: 0; }
+    .footer-legal-links a:last-child { margin-right: 0; }
+
+    /* ---- floating actions ---- */
+    .floating-actions {
+      position: fixed; right: 1.25rem; bottom: 1.25rem;
+      display: flex; flex-direction: column; gap: 0.75rem;
+      z-index: 500;
+    }
+    .fab {
+      width: 56px; height: 56px; border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      color: #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      position: relative; text-decoration: none;
+    }
+    .fab:hover {
+      transform: scale(1.08); box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+      text-decoration: none; color: #fff;
+    }
+    .fab svg { width: 26px; height: 26px; fill: #fff; }
+    .fab-whatsapp { background: var(--whatsapp); }
+    .fab-whatsapp:hover { background: var(--whatsapp-dark); }
+    .fab-call { background: var(--blue); }
+    .fab-call:hover { background: var(--blue-dark); }
+    .fab-location { background: #ea4335; }
+    .fab-location:hover { background: #c5221f; }
+
+    .fab-whatsapp::before {
+      content: ""; position: absolute; inset: 0;
+      border-radius: 50%; background: var(--whatsapp);
+      opacity: 0.55; animation: fabPulse 2s infinite; z-index: -1;
+    }
+    @keyframes fabPulse {
+      0%   { transform: scale(1);   opacity: 0.55; }
+      70%  { transform: scale(1.7); opacity: 0;    }
+      100% { transform: scale(1.7); opacity: 0;    }
+    }
+
+    .fab-tooltip {
+      position: absolute; right: calc(100% + 10px); top: 50%;
+      transform: translateY(-50%); background: var(--navy);
+      color: #fff; padding: 0.4rem 0.75rem; border-radius: 6px;
+      font-size: 0.82rem; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: opacity 0.2s;
+    }
+    .fab:hover .fab-tooltip { opacity: 1; }
+
+    @media (max-width: 720px) {
+      .hero { padding: 5rem 0; }
+      .logo-text { font-size: 0.9rem; }
+      .fab { width: 50px; height: 50px; }
+      .fab svg { width: 22px; height: 22px; }
+      .floating-actions { right: 0.9rem; bottom: 0.9rem; gap: 0.6rem; }
+      .ceo-card img { min-height: 280px; }
+      .footer-bottom-inner { justify-content: center; text-align: center; }
+      .client-logo-wrap { height: 120px; padding: 1rem; }
+      .client-logo-wrap img { max-height: 80px; }
+      .office-map-card { flex-direction: column; text-align: center; }
+      .client-card-body h3 { font-size: 0.85rem; min-height: 2.6em; }
+      .map-embed { height: 300px; }
+      .map-meta { justify-content: center; text-align: center; }
+    }
+
+    .navbar-toggler { border: none; padding: 0.5rem; }
+    .navbar-toggler:focus { box-shadow: none; }
+    .hero { background-color: #0f172a; }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg container py-2">
+    <a href="#" class="logo-wrap navbar-brand">
+      <img src="images/logo.jpeg" alt="Tendrich Innovations SMC LTD logo" width="52" height="52" fetchpriority="high">
+      <div class="logo-text">Tendrich Innovations SMC LTD<span>Security &amp; Power Systems</span></div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-custom"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav main-nav gap-lg-4">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Security &amp; Power Systems<br>You Can Trust</h1>
+      <p>Tendrich Innovations SMC LTD — established in 2023, serving homes, institutions, offices, schools, banks, hotels, and streets across East Africa.</p>
+      <a href="#services" class="btn btn-primary btn-lg px-4 py-3" style="background: var(--blue); border: none; border-radius: var(--radius); font-weight: 600;">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT + TECHNICAL HEAD ========== -->
+  <section id="about" class="section section-light">
+    <div class="container">
+      <h2>Our Background</h2>
+      <p class="section-lead">
+        Tendrich Innovations SMC LTD is a privately owned company opened and established in 2023, dealing in the installation of CCTV Camera, Automatic Gate System, Solar System, Electric Fence, Razor Wire, Carports, Electrical Wiring, Motion Sensor Systems, Car Shades, Fire Fighting Systems and Access Control Systems.
+      </p>
+
+      <div class="row g-4 align-items-stretch mt-3">
+        <div class="col-md-6">
+          <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>To become one of the leading innovations in the construction, power and security industry in East Africa.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>To supply and install quality systems that reflect the value of money that clients invest, hence improving security and better living.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Head Highlight -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="ceo-card row g-0">
+            <div class="col-md-4">
+              <img src="images/technical-head.jpeg" alt="Kabonge Richard, Technical Head of Tendrich Innovations SMC LTD" loading="lazy" width="400" height="500">
+            </div>
+            <div class="col-md-8">
+              <div class="ceo-content">
+                <span class="ceo-tag"><i class="bi bi-gear-fill me-1"></i>Technical Leadership</span>
+                <h3>Kabonge Richard</h3>
+                <span class="ceo-role">Technical Head</span>
+
+                <p class="ceo-availability">
+                  <i class="bi bi-headset me-1"></i>
+                  Always available for all technical advice and help. You can contact us.
+                </p>
+
+                <p class="ceo-quote">
+                  &ldquo;Our commitment is simple: quality systems, honest service, and lasting security for every client we serve.&rdquo;
+                </p>
+
+                <div class="ceo-actions">
+                  <a href="https://wa.me/256788841434?text=Hello%20Eng.%20Richard%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" class="btn-wa" aria-label="WhatsApp Kabonge Richard">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.79.37c-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.11 1.52 5.84L.05 23.5l5.82-1.52A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.83 0-3.55-.49-5.03-1.35l-.36-.21-3.45.9.92-3.36-.23-.37A9.96 9.96 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10z"/></svg>
+                    WhatsApp: +256 788 841 434
+                  </a>
+                  <a href="mailto:kabongerichard@gmail.com" class="btn-mail" aria-label="Email Kabonge Richard">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    kabongerichard@gmail.com
+                  </a>
+                  <a href="https://www.linkedin.com/company/kabongerichard" target="_blank" rel="noopener" class="btn-li" aria-label="Kabonge Richard on LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OUR CLIENTS ========== -->
+  <section id="clients" class="section">
+    <div class="container">
+      <h2>Our Clients</h2>
+      <p class="section-lead">We are proud to have served a wide range of institutions, businesses, and organisations across East Africa.</p>
+      <div class="row g-4">
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/muga.jpg" alt="Muga Services Ltd logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Muga Services Ltd</h3><span class="client-cat">Jinja, Kireka</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/chain.jpg" alt="CHAIN – Community Health and Information Network logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>CHAIN – Community Health and Information Network</h3><span class="client-cat">Kiwenda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/power.jpeg" alt="Power Trust Uganda Limited logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Power Trust Uganda Limited</h3><span class="client-cat">Ntinda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/jare.jpeg" alt="Jare House logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Jare House</h3><span class="client-cat">Corporate</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/solarica.jpg" alt="Solarika Energy logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Solarika Energy</h3><span class="client-cat">Solar Energy</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/kuku.jpeg" alt="Yo KUKU logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Yo KUKU</h3><span class="client-cat">Corporate</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/luwero.jpeg" alt="Luwero Industries Ltd logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Luwero Industries Ltd</h3><span class="client-cat">Industrial</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/neptune.jpeg" alt="Neptune Software Groups logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Neptune Software Groups</h3><span class="client-cat">Bukoto</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/solar.jpeg" alt="Solar Nation logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Solar Nation</h3><span class="client-cat">Ntinda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/precious.jpeg" alt="Precious Kindergarten logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Precious Kindergarten</h3><span class="client-cat">Mbale</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/soco.jpg" alt="Socete Eco Holdings Limited logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Socete Eco Holdings Limited</h3><span class="client-cat">Ntinda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/target.jpg" alt="Target Link logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Target Link</h3><span class="client-cat">Ntinda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/spring.jpeg" alt="Springs of Hope logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Springs of Hope</h3><span class="client-cat">Ntinda</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/joyale.jpeg" alt="Joyale Technical Services logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Joyale Technical Services</h3><span class="client-cat">Jinja</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/mbale.jpg" alt="Mbale Foam logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Mbale Foam</h3><span class="client-cat">Manufacturing</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/krimhillschols.png" alt="Krimhill Schools logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Krimhill Schools</h3><span class="client-cat">Education</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/afropark.png" alt="Afropark Muyenga logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Afropark Muyenga</h3><span class="client-cat">Corporate</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/geogina.jpg" alt="Georgina Eye Clinic logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Georgina Eye Clinic</h3><span class="client-cat">Health Services</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/hopeclinic.jpeg" alt="Hope Clinic logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Hope Clinic</h3><span class="client-cat">Health Services</span></div>
+          </div>
+        </div>
+  <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/Christian.jpg" alt="Christian Missionary Fellowship International" loading="lazy"></div>
+            <div class="client-card-body"><h3>Christian Missionary Fellowship International</h3><span class="client-cat">christian</span></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="client-card">
+            <div class="client-logo-wrap"><img src="images/jeeddren.jpg" alt="Jeeddren Health Services logo" loading="lazy"></div>
+            <div class="client-card-body"><h3>Jeeddren Health Services</h3><span class="client-cat">Health Services</span></div>
+          </div>
+        </div>
+
+      </div>
+      <p class="clients-cta">Want to see your logo here? <a href="#contact">Get in touch with us today</a>.</p>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section section-light">
+    <div class="container">
+      <h2>What We Do</h2>
+      <p class="section-lead">We are dealers and installers of the following systems and solutions:</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/cctv.jpg" alt="CCTV Camera installation" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>CCTV Camera</h3><p>Professional surveillance systems for round-the-clock monitoring.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/automatic-gate.jpg" alt="Automatic Gate System" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Automatic Gate System</h3><p>Convenient and secure automated gate solutions.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/solar-battery.jpg" alt="Solar System installation" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Solar System</h3><p>Reliable solar power installations for homes and institutions.</p></div>
+          </div>
+        </div>
+
+        <!-- ELECTRIC FENCE (separate service) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/electric-fence.jpeg" alt="Electric Fence installation" loading="lazy" width="400" height="180"
+                 onerror="this.onerror=null;this.src='razor-wire.jpg';">
+            <div class="service-card-body"><h3>Electric Fence</h3><p>Energised perimeter fencing that deters and detects intrusion around homes, institutions and businesses.</p></div>
+          </div>
+        </div>
+
+        <!-- RAZOR WIRE (separate service) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/razor-wire.jpg" alt="Razor Wire installation" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Razor Wire</h3><p>Heavy-duty physical barrier wire installations for walls, fences and perimeter boundaries.</p></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/carports.jpg" alt="Carports and Car Shades" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Carports &amp; Car Shades</h3><p>Durable, stylish structures for vehicle protection.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/electrical-wiring.jpg" alt="Electrical Wiring and Inverters" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Electrical Wiring</h3><p>Safe and compliant electrical installations.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/motion-sensor.jpeg" alt="Motion Sensor Systems" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Motion Sensor Systems</h3><p>Smart detection systems for automated security response.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/fire-fighting.jpeg" alt="Fire Fighting Systems" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Fire Fighting Systems</h3><p>Essential fire suppression and safety installations.</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <img src="images/access-control.jpeg" alt="Access Control Systems" loading="lazy" width="400" height="180">
+            <div class="service-card-body"><h3>Access Control Systems</h3><p>Controlled entry management for offices and institutions.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VIDEOS ========== -->
+  <section id="videos" class="section">
+    <div class="container">
+      <h2>Videos of Our Work</h2>
+      <p class="section-lead">Watch real installations and project demonstrations from our team across East Africa.</p>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="none" playsinline poster="images/automatic-gate.jpg">
+                <source src="videos/automatic-gate-install.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-card-body">
+              <span class="badge-cat">Automatic Gates</span>
+              <h3>Automatic Gate Installation</h3>
+              <p>Full installation walkthrough of a residential automatic sliding gate system.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="none" playsinline poster="images/cctv.jpg">
+                <source src="videos/cctv-install.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-card-body">
+              <span class="badge-cat">CCTV</span>
+              <h3>CCTV Camera Setup</h3>
+              <p>Multi-camera surveillance system installed for a commercial building.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="none" playsinline poster="images/solar-battery.jpg">
+                <source src="videos/solar-install.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-card-body">
+              <span class="badge-cat">Solar</span>
+              <h3>Solar Power Installation</h3>
+              <p>Complete solar panel and battery backup installation for a home.</p>
+            </div>
+          </div>
+        </div>
+            </div>
+    </div>
+  </section>
+
+  <!-- ========== AFTER-SALES ========== -->
+  <section class="section section-accent">
+    <div class="container">
+      <h2>After-Sales Support</h2>
+      <p>
+        At Tendrich Systems SMS LTD, we offer after-sales services that include a warranty of service of <strong>6 months</strong> with possible replacement if system failure is not due to negligence, power surges, or extreme weather conditions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CORE VALUES ========== -->
+  <section id="values" class="section">
+    <div class="container">
+      <h2>Our Core Values</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg">
+          <div class="value-card">
+            <img src="images/teamwork.jpg" alt="Team Work" loading="lazy" width="300" height="150">
+            <div class="value-card-body"><h3>Team Work</h3><p>We work as a Team.</p></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <div class="value-card">
+            <img src="images/integrity.jpg" alt="Integrity" loading="lazy" width="300" height="150">
+            <div class="value-card-body"><h3>Integrity</h3><p>We always ensure integrity in our work.</p></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <div class="value-card">
+            <img src="images/quality.jpg" alt="Quality" loading="lazy" width="300" height="150">
+            <div class="value-card-body"><h3>Quality</h3><p>We deliver quality work.</p></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <div class="value-card">
+            <img src="images/transparency.jpg" alt="Transparency" loading="lazy" width="300" height="150">
+            <div class="value-card-body"><h3>Transparency</h3><p>We are always transparent in our dealings.</p></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg">
+          <div class="value-card">
+            <img src="images/unity.jpg" alt="Unity" loading="lazy" width="300" height="150">
+            <div class="value-card-body"><h3>Unity</h3><p>We are united as a team and with our clients.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section id="gallery" class="section section-light">
+    <div class="container">
+      <h2>Our Gallery</h2>
+      <p class="section-lead">A look at some of our installations and projects across East Africa.</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-01.jpeg" alt="Project 1" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-02.jpg" alt="Project 2" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-03.jpg" alt="Project 3" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-04.jpg" alt="Project 4" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-05.jpg" alt="Project 5" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-06.jpeg" alt="Project 6" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-07.jpeg" alt="Project 7" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-08.jpg" alt="Project 8" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-09.jpg" alt="Project 9" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-10.jpg" alt="Project 10" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-11.jpeg" alt="Project 11" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-12.jpg" alt="Project 12" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-13.jpeg" alt="Project 13" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-14.jpeg" alt="Project 14" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-15.jpeg" alt="Project 15" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-16.jpeg" alt="Project 16" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-17.jpeg" alt="Project 17" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-18.jpeg" alt="Project 18" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-19.jpeg" alt="Project 19" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-20.jpeg" alt="Project 20" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-21.jpeg" alt="Project 21" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-22.jpeg" alt="Project 22" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-01.jpeg" alt="Installation 1" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-23.jpeg" alt="Project 23" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-24.jpeg" alt="Project 24" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-25.jpeg" alt="Project 25" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-26.jpeg" alt="Project 26" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-27.jpeg" alt="Project 27" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-28.jpeg" alt="Project 28" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-29.jpeg" alt="Project 29" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-30.jpeg" alt="Project 30" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-31.jpeg" alt="Project 31" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-32.jpeg" alt="Project 32" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-33.jpeg" alt="Project 33" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-34.jpeg" alt="Project 34" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-35.jpeg" alt="Project 35" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-36.jpeg" alt="Project 36" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-37.jpeg" alt="Project 37" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-38.jpeg" alt="Project 38" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-39.jpeg" alt="Project 39" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-40.jpeg" alt="Project 40" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-41.jpeg" alt="Project 41" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-42.jpeg" alt="Project 42" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-43.jpeg" alt="Project 43" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-44.jpeg" alt="Project 44" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-45.jpeg" alt="Project 45" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-46.jpeg" alt="Project 46" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-47.jpeg" alt="Project 47" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-48.jpeg" alt="Project 48" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-49.jpeg" alt="Project 49" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-50.jpeg" alt="Project 50" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-51.jpeg" alt="Project 51" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-52.jpeg" alt="Project 52" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-53.jpeg" alt="Project 53" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-54.jpeg" alt="Project 54" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-55.jpeg" alt="Project 55" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-56.jpeg" alt="Project 56" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-57.jpeg" alt="Project 57" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-58.jpeg" alt="Project 58" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-59.jpeg" alt="Project 59" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-60.jpeg" alt="Project 60" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-61.jpeg" alt="Project 61" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-62.jpeg" alt="Project 62" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-63.jpeg" alt="Project 63" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-64.jpeg" alt="Project 64" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-65.jpeg" alt="Project 65" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-66.jpeg" alt="Project 66" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-67.jpeg" alt="Project 67" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-68.jpeg" alt="Project 68" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-69.jpeg" alt="Project 69" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-70.jpeg" alt="Project 70" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-71.jpeg" alt="Project 71" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-72.jpeg" alt="Project 72" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-73.jpeg" alt="Project 73" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-74.jpeg" alt="Project 74" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-75.jpeg" alt="Project 75" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-76.jpeg" alt="Project 76" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-77.jpeg" alt="Project 77" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-78.jpeg" alt="Project 78" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-79.jpeg" alt="Project 79" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-80.jpeg" alt="Project 80" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-81.jpeg" alt="Project 81" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-82.jpeg" alt="Project 82" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-83.jpeg" alt="Project 83" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-84.jpeg" alt="Project 84" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-85.jpeg" alt="Project 85" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-86.jpeg" alt="Project 86" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-87.jpeg" alt="Project 87" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-88.jpeg" alt="Project 88" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-89.jpeg" alt="Project 89" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-90.jpeg" alt="Project 90" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-91.jpeg" alt="Project 91" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-92.jpeg" alt="Project 92" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-93.jpeg" alt="Project 93" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-94.jpeg" alt="Project 94" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-95.jpeg" alt="Project 95" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-96.jpeg" alt="Project 96" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/gallery-97.jpeg" alt="Project 97" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-02.jpeg" alt="Installation 2" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-03.jpeg" alt="Installation 3" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-04.jpeg" alt="Installation 4" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-05.jpeg" alt="Installation 5" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-06.jpeg" alt="Installation 6" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-07.jpeg" alt="Installation 7" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-08.jpeg" alt="Installation 8" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-09.jpeg" alt="Installation 9" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-10.jpeg" alt="Installation 10" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-11.jpeg" alt="Installation 11" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-12.jpeg" alt="Installation 12" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-13.jpeg" alt="Installation 13" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-14.jpeg" alt="Installation 14" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/install-15.jpeg" alt="Installation 15" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/teamwork-01.jpeg" alt="Team work 1" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/teamwork-02.jpeg" alt="Team work 2" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/teamwork-03.jpeg" alt="Team work 3" loading="lazy" width="300" height="160"></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-item"><img src="images/teamwork-04.jpeg" alt="Team work 4" loading="lazy" width="300" height="160"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="section-lead">Ready to improve your security or power setup? Get in touch or visit our office.</p>
+
+      <a href="https://www.google.com/maps/search/?api=1&query=0.366111,32.615778"
+         target="_blank" rel="noopener" class="office-map-card" aria-label="Open office location in Google Maps">
+        <div class="map-text">
+          <h4><i class="bi bi-geo-alt-fill me-1"></i>Visit Our Office</h4>
+          <p>Ntinda Kigowa Road — Opposite Police Post, Kampala, Uganda</p>
+          <p>0°21'58.0"N 32°36'56.8"E</p>
+          <span><i class="bi bi-geo-alt-fill me-1"></i>Get Directions on Google Maps →</span>
+        </div>
+      </a>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">— Select —</option>
+            <option>CCTV Camera</option>
+            <option>Automatic Gate System</option>
+            <option>Solar System</option>
+            <option>Electric Fence</option>
+            <option>Razor Wire</option>
+            <option>Carports</option>
+            <option>Electrical Wiring</option>
+            <option>Motion Sensor Systems</option>
+            <option>Car Shades</option>
+            <option>Fire Fighting Systems</option>
+            <option>Access Control Systems</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary w-100 py-3" style="background: var(--blue); border: none; border-radius: var(--radius); font-weight: 600;">
+          <i class="bi bi-whatsapp me-2"></i>Send via WhatsApp
+        </button>
+        <p class="form-success" id="form-success" hidden>Thank you! Your message has been received. We will get back to you shortly.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <img src="images/logo.jpeg" alt="Tendrich Innovations logo" loading="lazy" width="52" height="52">
+          <div class="brand-text">
+            Tendrich Innovations SMC LTD
+            <span>Security &amp; Power Systems</span>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          A privately owned company established in 2023, delivering reliable CCTV, solar, automatic gate, electric fence, razor wire, and access control solutions across East Africa. Quality systems, honest service.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@tendrichinnovations" class="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://www.instagram.com/tendrichinnovations" class="instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/tendrichinnovations" class="twitter" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.youtube.com/@tendrichinnovations" class="youtube" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/tendrichinnovations" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/256788841434" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-6">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#clients">Our Clients</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-6">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="#services">CCTV Camera</a></li>
+          <li><a href="#services">Automatic Gates</a></li>
+          <li><a href="#services">Solar Systems</a></li>
+          <li><a href="#services">Electric Fence</a></li>
+          <li><a href="#services">Razor Wire</a></li>
+          <li><a href="#services">Access Control</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h5>Get In Touch</h5>
+
+        <div class="footer-contact-item">
+          <span class="ico"><i class="bi bi-geo-alt-fill"></i></span>
+          <div>
+            <span>Ntinda Kigowa Road — Opposite Police Post, Kampala, Uganda<br>
+            </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-contact-item">
+          <span class="ico"><i class="bi bi-telephone-fill"></i></span>
+          <div><a href="tel:+256200921065">Office Line: +256 200 921 065</a></div>
+        </div>
+
+        <div class="footer-contact-item">
+          <span class="ico"><i class="bi bi-envelope-fill"></i></span>
+          <a href="mailto:tendrichinnovations@gmail.com">tendrichinnovations@gmail.com</a>
+        </div>
+ <div class="footer-contact-item">
+          <span class="ico"><i class="bi bi-whatsapp"></i></span>
+          <a href="https://wa.me/256788841434" target="_blank" rel="noopener">WhatsApp: +256 788 841 434</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <div class="copyright">
+          &copy; <span id="year">2025</span> <strong>Tendrich Innovations SMC LTD</strong>. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#contact">Support</a>
+        </div>
+        <div class="designer">
+          Designed by <a href="https://drivedigitalweb.online" target="_blank" rel="noopener">DriveDigitalWeb</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== FLOATING ACTIONS ========== -->
+<div class="floating-actions">
+  <a href="https://www.google.com/maps/search/?api=1&query=0.366111,32.615778"
+     class="fab fab-location" target="_blank" rel="noopener" aria-label="Open office location">
+    <span class="fab-tooltip">Our Office Location — Ntinda Kigowa Rd</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+  </a>
+  <a href="tel:+256200921065" class="fab fab-call" aria-label="Call Office Line">
+    <span class="fab-tooltip">Office Line: +256 200 921 065</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  </a>
+  <a href="https://wa.me/256788841434?text=Hello%20Tendrich%20Innovations%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="fab-tooltip">WhatsApp: +256 788 841 434</span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.79.37c-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.11 1.52 5.84L.05 23.5l5.82-1.52A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.83 0-3.55-.49-5.03-1.35l-.36-.21-3.45.9.92-3.36-.23-.37A9.96 9.96 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10z"/></svg>
+  </a>
+</div>
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img src="" alt="Enlarged view">
+</div>
+
+<!-- ========== SCRIPTS ========== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script>
+  /* ---- AUTO-UPDATE FOOTER YEAR (runs every visit, so it always shows current year) ---- */
+  (function () {
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+
+  document.addEventListener('DOMContentLoaded', function () {
+    /* ---- gallery lightbox ---- */
+    var lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+      var lightboxImg = lightbox.querySelector('img');
+      var lightboxClose = lightbox.querySelector('.lightbox-close');
+
+      document.querySelectorAll('.gallery-item img').forEach(function (img) {
+        img.addEventListener('click', function () {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add('open');
+        });
+      });
+
+      var closeLightbox = function () { lightbox.classList.remove('open'); };
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+    }
+
+    /* ---- contact form → WhatsApp ---- */
+    var form = document.getElementById('contact-form');
+    var successMsg = document.getElementById('form-success');
+    var phoneNumber = '256788841434';
+
+    if (form) {
+      var fields = {
+        name: {
+          input: document.getElementById('name'),
+          error: document.getElementById('name-error'),
+          validate: function (v) { return v.trim() !== '' || 'Please enter your name.'; }
+        },
+        email: {
+          input: document.getElementById('email'),
+          error: document.getElementById('email-error'),
+          validate: function (v) {
+            var t = v.trim();
+            if (!t) return 'Please enter your email.';
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(t) || 'Please enter a valid email address.';
+          }
+        },
+        message: {
+          input: document.getElementById('message'),
+          error: document.getElementById('message-error'),
+          validate: function (v) { return v.trim() !== '' || 'Please enter a message.'; }
+        }
+      };
+
+      var validateField = function (key) {
+        var f = fields[key];
+        var result = f.validate(f.input.value);
+        if (result === true) {
+          f.input.classList.remove('invalid');
+          f.error.textContent = '';
+          return true;
+        }
+        f.input.classList.add('invalid');
+        f.error.textContent = result;
+        return false;
+      };
+
+      Object.keys(fields).forEach(function (key) {
+        var input = fields[key].input;
+        input.addEventListener('blur', function () { validateField(key); });
+        input.addEventListener('input', function () {
+          if (input.classList.contains('invalid')) validateField(key);
+        });
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var valid = true;
+        Object.keys(fields).forEach(function (key) { if (!validateField(key)) valid = false; });
+
+        if (valid) {
+          var name = fields.name.input.value.trim();
+          var email = fields.email.input.value.trim();
+          var phone = document.getElementById('phone').value.trim();
+          var service = document.getElementById('service').value;
+          var message = fields.message.input.value.trim();
+
+          var waText = '*New enquiry from Tendrich website*%0A%0A';
+          waText += '*Name:* ' + encodeURIComponent(name) + '%0A';
+          waText += '*Email:* ' + encodeURIComponent(email) + '%0A';
+          if (phone) waText += '*Phone:* ' + encodeURIComponent(phone) + '%0A';
+          if (service) waText += '*Service:* ' + encodeURIComponent(service) + '%0A';
+          waText += '*Message:* ' + encodeURIComponent(message);
+
+          window.open('https://wa.me/' + phoneNumber + '?text=' + waText, '_blank');
+
+          successMsg.hidden = false;
+          form.reset();
+          Object.keys(fields).forEach(function (key) {
+            fields[key].input.classList.remove('invalid');
+            fields[key].error.textContent = '';
+          });
+          setTimeout(function () { successMsg.hidden = true; }, 6000);
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
